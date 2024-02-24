@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dangnhap {
+            width: 80vw;
+            overflow: auto;
+            margin: auto;
+            font-size: 1.5vw;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dangnhap .login {
+            width: 40%;
+            overflow: auto;
+            border: 0.3vw solid black;
+            margin: auto;
+            margin-top: 2vw;
+            padding: 3vw;
+        }
+
+        .dangnhap .login .td{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .dangnhap .login .td .nut {
+            /* border: 0.1vw solid black; */
+            width: 15vw;
+            text-align: center;
+        }
+
+        .dangnhap .login .td .nut a {
+            text-decoration: none;
+            color: gray;
+            display: block;
+        }
+
+        .dangnhap .login .td .nut a.active {
+            color: black;
+            border-bottom: 0.3vw solid black;
+        }
+
+        .dangnhap .login .khung {
+            /* border: 0.1vw solid black; */
+            margin-top: 2vw;
+        }
+
+        .dangnhap .login .khung label {
+            font-size: 1.5vw;
+            line-height: 3vw;
+            font-weight: bold;
+        }
+
+        .dangnhap .login .khung .nhap {
+            margin: auto;
+            width: 30vw;
+            height: 3vw;
+            font-size: 1.2vw;
+            border: 0.2vw solid black;
+        }
+
+        .dangnhap .login .khung .sm {
+            width: 12vw;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            margin: 3vw;
+            font-size: 1.2vw;
+            padding: 1vw;
+            border: 0.3vw solid black;
+            border-radius: 1vw;
+            background: white;
+            margin-left: 30%;
+        }
+
+        .dangnhap .login .khung .sm:hover{
+            background-color: black;
+            color:white;
+        }
+
+        .dangnhap .login .dn {
+            display: none;
+        }
+
+        .dangnhap .login .dk {
+            display: block;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dangnhap">
+        <div class="login">
+            <div class="td">
+                <div class="nut"><a class="nut_dn active" href="#"><h3>ĐĂNG NHẬP</h3></a></div>
+                <div class="nut/"><h3>/</h3></div>
+                <div class="nut"><a class="nut_dk" href="#"><h3>ĐĂNG KÍ</h3></a></div>
+            </div>
+            <div class="khung dn">
+                <form action="#" method="">
+                    <label>Email: </label>
+                    <br/>
+                    <input class="nhap" type="email" placeholder="Email" name="email"/>
+                    <br/>
+                    <br/>
+                    <label>Mật khẩu: </label>
+                    <br/>
+                    <input class="nhap" type="password" placeholder="Password" name="password"/>
+                    <br/>
+                    <input class="sm" type="submit" value="ĐĂNG NHẬP"/>
+                </form>
+            </div>
+            <div class="khung dk">
+                <form action="#" method="">
+                    <label>Họ và tên:</label><br/>
+                    <input class="nhap" type="text" placeholder="Họ và tên" name="ten"/><br/>
+                    <label>Ngày sinh:</label><br/>
+                    <input class="nhap" type="text" placeholder="Ngày sinh" name="ngaysinh"/><br/>
+                    <label>Số điện thoại:</label><br/>
+                    <input class="nhap" type="text" placeholder="Số điện thoại" name="sdt"/><br/>
+                    <label>Email:</label><br/>
+                    <input class="nhap" type="text" placeholder="Email" name="email"/><br/>
+                    <label>Mật khẩu:</label><br/>
+                    <input class="nhap" type="text" placeholder="Mật khẩu" name="password"/><br/>
+                    <label>Xác nhận mật khẩu:</label><br/>
+                    <input class="nhap" type="text" placeholder="Mật khẩu" name="password"/><br/>
+                    <input class="sm" type="submit" value="ĐĂNG KÍ"/>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
